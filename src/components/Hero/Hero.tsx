@@ -3,6 +3,10 @@ import { HeroEffectBox } from "../ui/HeroEffectBox";
 import { LightEffect } from "../LightEffect/LightEffect";
 import Image from "next/image";
 import { TextGenerateEffect } from "../ui/text-generate-Effect";
+import { FlipTexts } from "../ui/flip-texts";
+import { LinkPreview } from "../ui/link-preview";
+import Link from "next/link";
+import { Button } from "../ui/moving-border-button";
 
 const Hero = () => {
   return (
@@ -18,11 +22,83 @@ const Hero = () => {
               alt="avatar"
               className="mx-auto bg-white-100 rounded-full"
             />
-            <div className="">
+            <div className="text-center">
               <TextGenerateEffect
                 words="Md. Ajijul Islam (Coder)"
                 className="text-2xl"
               />
+              <FlipTexts words={words} />
+              <div className="flex items-center justify-center gap-2 my-3">
+                <div>
+                  <LinkPreview
+                    url="https://facebook.com"
+                    className="font-bold "
+                  >
+                    <Image
+                      src="/images/facebook.png"
+                      height={40}
+                      width={40}
+                      alt="avatar"
+                      className="mx-auto  "
+                    />
+                  </LinkPreview>
+                </div>
+                <div>
+                  <LinkPreview
+                    url="https://linkedin.com"
+                    className="font-bold "
+                  >
+                    <Image
+                      src="/images/linkedin.png"
+                      height={40}
+                      width={40}
+                      alt="avatar"
+                      className="mx-auto  "
+                    />
+                  </LinkPreview>
+                </div>
+                <div>
+                  <LinkPreview url="https://twitter.com" className="font-bold ">
+                    <Image
+                      src="/images/twitter.png"
+                      height={40}
+                      width={40}
+                      alt="avatar"
+                      className="mx-auto  "
+                    />
+                  </LinkPreview>
+                </div>
+                <div>
+                  <LinkPreview
+                    url="https://instagram.com"
+                    className="font-bold "
+                  >
+                    <Image
+                      src="/images/instagram.png"
+                      height={40}
+                      width={40}
+                      alt="avatar"
+                      className="mx-auto  "
+                    />
+                  </LinkPreview>
+                </div>
+                <div>
+                  <LinkPreview url="https://github.com" className="font-bold ">
+                    <Image
+                      src="/images/github.png"
+                      height={40}
+                      width={40}
+                      alt="avatar"
+                      className="mx-auto  "
+                    />
+                  </LinkPreview>
+                </div>
+              </div>
+
+              <div className="space-x-3 my-10">
+                <Button >Get in Touch</Button>
+                <Button>Get Resume</Button>
+              </div>
             </div>
           </div>
 
@@ -34,3 +110,10 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const words = [
+  "Junior MERN Stact Developer",
+  "Junior Front-end Developer",
+  "Junior Back-end Developer",
+  "Web Designer",
+];

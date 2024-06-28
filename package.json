@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-hover-card": "^1.1.1",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.4.0",
@@ -17,6 +18,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.4",
     "next-themes": "^0.3.0",
+    "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.3.0",

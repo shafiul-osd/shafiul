@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import { Background } from "@/components/ui/Background";
+import { Navbar } from "@/components/Shared/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div>
-          <Background>{children}</Background>
+          <Background>
+            <Navbar/>
+            {children}
+            </Background>
           </div>
         </ThemeProvider>
       </body>
