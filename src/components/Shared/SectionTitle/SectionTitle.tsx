@@ -1,10 +1,10 @@
 import React, { Children } from "react";
 
-const SectionTitle = ({title}:{title : string}) => {
+const SectionTitle = ({title,className}:{title : string; className? : string}) => {
   return (
-    <div>
-      <div className=" bg-transparent flex flex-col items-center justify-center ">
-        <h1 className="md:text-2xl text-xl lg:text-3xl font-bold text-center text-white my-2">
+    <div className={`${className}`}>
+      <div className={` bg-transparent flex flex-col items-center justify-center  `}>
+        <h1 className={` md:text-2xl text-xl lg:text-3xl font-bold text-center text-white my-2`}>
           {title || "title"}
         </h1>
         <div className="relative w-[40rem]  ">
