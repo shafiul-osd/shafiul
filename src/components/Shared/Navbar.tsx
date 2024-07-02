@@ -4,16 +4,12 @@ import { FloatingNav } from "../ui/floating-navbar";
 export function Navbar() {
   const navItems = [
     {
-      name: "Home",
-      link: "/",
-    },
-    {
       name: "Projects",
       link: "/projects",
     },
     {
       name: "About me",
-      link: "/about",
+      link: "#about",
     },
     {
       name: "Reviews",
@@ -25,7 +21,7 @@ export function Navbar() {
     },
   ];
   return (
-    <div className="relative  w-full">
+    <div className="relative w-full">
       <FloatingNav navItems={navItems} />
     
     </div>
