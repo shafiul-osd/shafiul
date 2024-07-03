@@ -13,14 +13,12 @@ const About = () => {
   return (
     <div className="w-[90vw] mx-auto relative my-32" id="about">
       <SectionTitle title="About me" />
- 
 
       <div className="grid md:grid-cols-2 my-12 md:gap-20 backdrop-blur-[3px] border border-[rgba(255,255,255,0.1)] p-5 rounded-[10px]">
       <div className="absolute">
-      <LightEffect color="blue" position="-bottom-24 right-10"/>
-      </div>
+          <LightEffect color="blue" position="-top-24 lright-60" />
+        </div>
         <div className="">
-          
           <Image
             src="/images/ajijul.png"
             width="400"
@@ -30,7 +28,10 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col items-start justify-between md:justify-around">
-          <h2 className=" text-xl md:text-2xl my-10"><TextGenerateEffect words="Want to know about me ?"/></h2>
+
+          <h2 className=" text-xl md:text-2xl my-10">
+            <TextGenerateEffect words="Want to know about me ?" />
+          </h2>
           <p className="">
             I'm a passionate, who specializes in full stack development
             (React.js & Node.js). I am enthusiastic about bringing the technical
@@ -47,7 +48,7 @@ const About = () => {
             more.
           </p>
           <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear">
-            Next.js Blue
+            Hire me
           </button>
         </div>
       </div>
