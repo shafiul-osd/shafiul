@@ -89,14 +89,14 @@ export const MovingCards = ({
         {items.map((item, idx) => (
           <Boxbg key={idx}>
             <li
-              className=" p-5 flex justify-center items-center w-[150px] md:w-[200px] h-[150px] md:h-[200px] relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6"
+              className=" bg-gradient-to-r from-white-100 to-white-200 dark:from-slate-800 dark:to-sky-900 p-5 flex justify-center items-center w-[150px] md:w-[200px] h-[150px] md:h-[200px] relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6"
               style={{
                 background:
                   "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
               }}
               key={idx}
             >
-              <div className="text-center space-y-3">
+              <div className="text-center space-y-3 text-white-100">
                 <Image
                   src={item.icon}
                   height={40}

@@ -13,19 +13,40 @@ import { useTheme } from "next-themes";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Skills from "@/components/Skills/Skills";
 
+import "@theme-toggles/react/css/Classic.css";
+import { Classic } from "@theme-toggles/react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@radix-ui/react-dropdown-menu";
+import { MoonIcon, SunIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+import Projects from "@/components/Projects/Projects"
+import Footer from "@/components/Footer/Footer";
+import Contacts from "@/components/Contacts/Contacts";
+import Education from "@/components/Education/Education";
+
 export default function Home() {
   const { setTheme } = useTheme();
+
+  const [mood, setMood] = React.useState("dark");
+
   return (
     <main className="relative overflow-hidden" id="home">
       <Background className="">
         <div className="rounded-md flex items-center justify-center absolute left-0 top-0">
           <LightEffect />
         </div>
-       
 
         <Hero />
         <About />
-        <Skills/>
+        <Skills />
+        <Projects/>
+        <Education/>
+        <Contacts/>
         <div className="fixed left-5 md:left-20 top-14">
           <a
             className=" text-xl md:text-3xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-r from-green-500 via-blue-500 to-purple font-bold"
@@ -34,11 +55,32 @@ export default function Home() {
             Azizul Haque
           </a>
         </div>
-        <div
-          className="fixed right-5 md:right-20 top-14 text-2xl animate-spin"
-          onClick={() => setTheme("dark")}
-        >
-          <IoSettingsOutline />
+        <div className="fixed  right-5 md:right-20 top-14 text-3xl">
+          <div className="">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  className="outline-0 border-0"
+                  variant="default"
+                  size="icon"
+                >
+                  <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                  <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="p-4 border text-sm" align="start">
+                <DropdownMenuItem onClick={() => setTheme("light")}>
+                  Light
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("dark")}>
+                  Dark
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("system")}>
+                  System
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
 
         <a

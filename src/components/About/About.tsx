@@ -11,10 +11,10 @@ import { LightEffect } from "../LightEffect/LightEffect";
 
 const About = () => {
   return (
-    <div className="w-[90vw] mx-auto relative my-32" id="about">
+    <div className="w-[95vw] mx-auto relative my-32" id="about">
       <SectionTitle title="About me" />
 
-      <div className="grid md:grid-cols-2 my-12 md:gap-20 backdrop-blur-[3px] border border-[rgba(255,255,255,0.1)] p-5 rounded-[10px]">
+      <div className="grid lg:grid-cols-3 my-12 md:gap-20 bg-slate-900 backdrop-blur-[1px] border border-[rgba(255,255,255,0.1)] md:p-5 rounded-[10px]">
       <div className="absolute">
           <LightEffect color="blue" position="-top-24 lright-60" />
         </div>
@@ -23,26 +23,26 @@ const About = () => {
             src="/images/ajijul.png"
             width="400"
             height="400"
-            className="rounded-lg"
+            className="rounded-lg w-full"
             alt="ajijul.png"
           />
         </div>
-        <div className="flex flex-col items-start justify-between md:justify-around">
+        <div className="lg:col-span-2 flex flex-col items-start justify-between md:justify-around gap-y-2">
 
           <h2 className=" text-xl md:text-2xl my-10">
             <TextGenerateEffect words="Want to know about me ?" />
           </h2>
           <p className="">
-            I'm a passionate, who specializes in full stack development
+            I am a passionate, who specializes in full stack development
             (React.js & Node.js). I am enthusiastic about bringing the technical
             and visual aspects of digital products to life. User experience,
             pixel perfect design, and writing clear, readable, highly performant
             code matters to me.
           </p>
           <p className="">
-            I began my journey as a web developer in 2021, and since then, I've
+            I began my journey as a web developer in 2021, and since then, I have
             continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. I'm
+            challenges and learning the latest technologies along the way. I am
             building cutting-edge web applications using modern technologies
             such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much
             more.
