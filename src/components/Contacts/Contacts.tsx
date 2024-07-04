@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { Boxbg } from "../ui/boxBg";
 import { LinkPreview } from "../ui/link-preview";
+import Swal from 'sweetalert2'
 
 const Contacts = () => {
     const form:any = useRef();
@@ -26,11 +27,26 @@ const Contacts = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+           Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your Message Sent",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              e.target.reset()
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: error.message,
+                showConfirmButton: false,
+                timer: 1500
+              });
+
+              
+        }
       );
 
         
