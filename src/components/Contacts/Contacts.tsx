@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import {
   FaFacebook,
@@ -14,6 +15,26 @@ import { Boxbg } from "../ui/boxBg";
 import { LinkPreview } from "../ui/link-preview";
 
 const Contacts = () => {
+    const form:any = useRef();
+
+    const handleMail = (e: any) =>{
+        e.preventDefault();
+
+        emailjs
+      .sendForm(`${process.env.NEXT_PUBLIC_YOUR_SERVICE_ID}`, `${process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID}`, form.current, {
+        publicKey: `${process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY}`,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+        
+    }
   return (
     <div className="w-[90vw] mx-auto my-20">
       <div className="">
@@ -121,22 +142,24 @@ const Contacts = () => {
           </LinkPreview>
         </div>
         <div className="md:col-span-2 gap-3">
-          <form>
+          <form ref={form} onSubmit={handleMail}>
             <div className="grid md:grid-cols-2 gap-1">
               <Boxbg>
                 <input
                   className="w-full p-2.5 rounded-md"
-                  name="name"
+                  name="user_name"
                   type="text"
                   placeholder="Enter your name"
+                  required
                 />
               </Boxbg>
               <Boxbg>
                 <input
                   className="w-full p-2.5 rounded-md"
-                  name="name"
-                  type="text"
+                 name="user_email"
+                  type="email"
                   placeholder="Enter your Email"
+                  required
                 />
               </Boxbg>
             </div>
@@ -144,25 +167,25 @@ const Contacts = () => {
               <Boxbg>
                 <input
                   className="w-full p-2.5 rounded-md"
-                  name="name"
-                  type="text"
-                  placeholder="Enter your name"
+                  name="phone"
+                  type="number"
+                  placeholder="Enter your Phone optional"
                 />
               </Boxbg>
               <Boxbg>
                 <input
                   className="w-full p-2.5 rounded-md"
-                  name="name"
+                  name="subject"
                   type="text"
-                  placeholder="Enter your Email"
+                  placeholder="Subject"
                 />
               </Boxbg>
             </div>
             <Boxbg>
               <textarea
                 className="w-full h-56 p-2.5 rounded-md"
-                name="name"
-                placeholder="Enter your Email"
+                name="message"
+                placeholder="Enter your Message"
               />
             </Boxbg>
             <Boxbg>
