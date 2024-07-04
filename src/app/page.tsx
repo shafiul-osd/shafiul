@@ -47,7 +47,8 @@ export default function Home() {
         <Projects/>
         <Education/>
         <Contacts/>
-        <div className="fixed left-5 md:left-20 top-14">
+        <div className="fixed left-0 px-10 md:px-32 w-full z-50 top-20 md:top-14 bg-transparent flex justify-between items-center">
+        <div className="">
           <a
             className=" text-xl md:text-3xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-r from-green-500 via-blue-500 to-purple font-bold"
             href="#home"
@@ -55,7 +56,7 @@ export default function Home() {
             Azizul Haque
           </a>
         </div>
-        <div className="fixed  right-5 md:right-20 top-14 text-3xl">
+        <div className=" text-3xl">
           <div className="">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -81,6 +82,7 @@ export default function Home() {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
+        </div>
         </div>
 
         <a

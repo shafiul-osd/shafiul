@@ -5,19 +5,19 @@ export function Navbar() {
   const navItems = [
     {
       name: "Projects",
-      link: "/projects",
+      link: "#projects",
     },
     {
-      name: "About me",
+      name: "About",
       link: "#about",
     },
     {
-      name: "Reviews",
-      link: "/reviews",
+      name: "Education",
+      link: "#education",
     },
     {
       name: "Contact",
-      link: "/contacts",
+      link: "#contact",
     },
   ];
   return (

@@ -9,7 +9,7 @@ import { PiGoogleChromeLogoThin } from "react-icons/pi";
 
 const Prijects = () => {
   return (
-    <div className="my-20 w-[90vw] mx-auto">
+    <div id="projects" className="my-20 w-[90vw] mx-auto">
       <div className="">
         <SectionTitle title="Projects" />
       </div>

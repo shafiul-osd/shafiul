@@ -52,7 +52,7 @@ const Contacts = () => {
         
     }
   return (
-    <div className="w-[90vw] mx-auto my-20">
+    <div id='contact' className="w-[90vw] mx-auto my-20">
       <div className="">
         <SectionTitle title="Contact " />
       </div>

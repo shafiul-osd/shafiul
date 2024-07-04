@@ -14,9 +14,9 @@ const About = () => {
     <div className="w-[95vw] mx-auto relative my-32" id="about">
       <SectionTitle title="About me" />
 
-      <div className="grid lg:grid-cols-3 my-12 md:gap-20 bg-slate-900 backdrop-blur-[1px] border border-[rgba(255,255,255,0.1)] md:p-5 rounded-[10px]">
-      <div className="absolute">
-          <LightEffect color="blue" position="-top-24 lright-60" />
+      <div className="grid lg:grid-cols-3 my-12 md:gap-20  dark:bg-zinc-900 backdrop-blur-[1px] border border-[rgba(255,255,255,0.1)] md:p-5 rounded-[10px]">
+        <div className="absolute">
+          <LightEffect color="white" position="-top-24 -right-60" />
         </div>
         <div className="">
           <Image
@@ -28,24 +28,22 @@ const About = () => {
           />
         </div>
         <div className="lg:col-span-2 flex flex-col items-start justify-between md:justify-around gap-y-2">
-
           <h2 className=" text-xl md:text-2xl my-10">
             <TextGenerateEffect words="Want to know about me ?" />
           </h2>
           <p className="">
-            I am a passionate, who specializes in full stack development
-            (React.js & Node.js). I am enthusiastic about bringing the technical
-            and visual aspects of digital products to life. User experience,
-            pixel perfect design, and writing clear, readable, highly performant
-            code matters to me.
+            My name is Ajijul Islam, and I am a junior MERN stack developer with
+            a passion for creating dynamic and responsive web applications.
+            Since starting my journey in web development, I have honed my skills
+            in MongoDB, Express.js, React.js, and Node.js. I am dedicated to
+            writing clean, efficient, and maintainable code, always striving to
+            enhance the user experience.
           </p>
           <p className="">
-            I began my journey as a web developer in 2021, and since then, I have
-            continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. I am
-            building cutting-edge web applications using modern technologies
-            such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much
-            more.
+            My enthusiasm for technology drives me to continuously learn and
+            adopt the latest tools and frameworks. I am excited about building
+            innovative solutions and contributing to projects that make a
+            difference in the digital world.
           </p>
           <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear">
             Hire me

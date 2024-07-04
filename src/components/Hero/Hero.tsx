@@ -9,10 +9,10 @@ import { Button } from "../ui/moving-border-button";
 
 const Hero = () => {
   return (
-    <div  className="my-16 w-full relative h-screen flex flex-col items-center justify-center">
+    <div  className="my-28 md:my-24 w-full relative h-screen flex flex-col items-center justify-center">
       <div className=" relative flex flex-col items-center justify-center ">
         <div className=" w-[95vw] md:w-[80vw] absolute inset-0 h-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-        <div className="  w-[80vw] relative shadow-xl dark:bg-gray-900 border dark:border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+        <div className="w-[95vw]   md:w-[80vw] relative shadow-xl dark:bg-gray-900 border dark:border-gray-800  px-4 py-10 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="w-full flex flex-col items-center justify-center">
             <Image
               src="/images/avatar.webp"
