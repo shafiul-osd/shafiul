@@ -5,6 +5,7 @@ import { TextGenerateEffect } from "../ui/text-generate-Effect";
 import { FlipTexts } from "../ui/flip-texts";
 import { LinkPreview } from "../ui/link-preview";
 import { Button } from "../ui/moving-border-button";
+import Link from "next/link";
 
 
 const Hero = () => {
@@ -94,9 +95,9 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="space-x-3 my-10">
-                <Button >Get in Touch</Button>
-                <Button>Get Resume</Button>
+              <div className="flex flex-col md:flex-row justify-center items-center gap-5 my-10">
+                <Button as={Link} href="#contact" >Get in Touch</Button>
+                <Button as={Link} href="https://drive.google.com/file/d/13z5XKIj5kN-Fb-Y75jO2r4yAxu9WJ2KD/view?usp=drive_link">Get Resume</Button>
               </div>
             </div>
           </div>
