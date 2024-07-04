@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div  className="my-28 md:my-24 w-full relative h-screen flex flex-col items-center justify-center">
+    <div  className="mt-40 lg:mt-32 w-full relative h-full flex flex-col items-center justify-center">
       <div className=" relative flex flex-col items-center justify-center ">
         <div className=" w-[95vw] md:w-[80vw] absolute inset-0 h-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
         <div className="w-[95vw]   md:w-[80vw] relative shadow-xl dark:bg-gray-900 border dark:border-gray-800  px-4 py-10 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">

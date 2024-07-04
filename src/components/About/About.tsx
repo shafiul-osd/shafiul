@@ -27,9 +27,9 @@ const About = () => {
             alt="ajijul.png"
           />
         </div>
-        <div className="lg:col-span-2 flex flex-col items-start justify-between md:justify-around gap-y-2">
+        <div className="pb-10 md:pb-0 px-2 lg:col-span-2 flex flex-col items-start justify-between md:justify-around gap-y-2">
           <h2 className=" text-xl md:text-2xl my-10">
-            <TextGenerateEffect words="Want to know about me ?" />
+            <TextGenerateEffect words="Want to Know About Me?" />
           </h2>
           <p className="">
             My name is Ajijul Islam, and I am a junior MERN stack developer with
