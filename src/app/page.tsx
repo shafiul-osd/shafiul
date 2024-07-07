@@ -53,7 +53,7 @@ export default function Home() {
             className=" text-xl md:text-3xl bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-r from-green-500 via-blue-500 to-purple font-bold"
             href="#home"
           >
-            Azizul Haque
+            Shafiul Islam
           </a>
         </div>
         <div className=" text-3xl">

@@ -24,7 +24,7 @@ const Hero = () => {
             />
             <div className="text-center">
               <TextGenerateEffect
-                words="Md. Ajijul Islam (Coder)"
+                words="Shafiul Islam (Coder)"
                 className="text-2xl"
               />
               <FlipTexts words={words} />

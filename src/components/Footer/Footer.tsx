@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="w-full bg-black-100">
       <div className="w-[95vw] mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center py-10 gap-5">
         <div className="text-center md:text-left">
-          © 2022 - 2024 Qubartech. Design & Maintenance by Ajijul Islam.
+          © 2022 - 2024 Qubartech. Design & Maintenance by Shafiul Islam.
         </div>
         <div className="flex items-center gap-5">
                 <div>

@@ -20,11 +20,11 @@ const About = () => {
         </div>
         <div className="">
           <Image
-            src="/images/ajijul.png"
+            src="/images/shafiul.png"
             width="400"
             height="400"
             className="rounded-lg w-full"
-            alt="ajijul.png"
+            alt="Shafiul.png"
           />
         </div>
         <div className="pb-10 md:pb-0 px-2 lg:col-span-2 flex flex-col items-start justify-between md:justify-around gap-y-2">
@@ -32,7 +32,7 @@ const About = () => {
             <TextGenerateEffect words="Want to Know About Me?" />
           </h2>
           <p className="">
-            My name is Ajijul Islam, and I am a junior MERN stack developer with
+            My name is Shafiul Islam, and I am a junior MERN stack developer with
             a passion for creating dynamic and responsive web applications.
             Since starting my journey in web development, I have honed my skills
             in MongoDB, Express.js, React.js, and Node.js. I am dedicated to

@@ -87,8 +87,8 @@ const projects = [
       "Bangla Trips is a website offering information about various travel packages and tours in Bangladesh. It features a range of travel options, highlights key destinations, and provides detailed itineraries and pricing. The site aims to help users explore the cultural and natural beauty of Bangladesh through organized trips",
     screenshot: "/images/projects/bangla-trips.png",
     live: "https://assignment-12-819b8.web.app",
-    clientRepo: "https://github.com/ajijul-islam-5938/bangla-trips-client",
-    serverRepo: "https://github.com/ajijul-islam-5938/bangla-trips-server",
+    clientRepo: "https://github.com/Shafiul-islam-5938/bangla-trips-client",
+    serverRepo: "https://github.com/Shafiul-islam-5938/bangla-trips-server",
   },
   {
     id: 2,
@@ -98,8 +98,8 @@ const projects = [
       "The website 'Giving Globe' provides a platform for donating to various global causes. It features a map interface highlighting different regions and the specific issues they face, such as poverty, education, and health. Users can select a cause, view detailed information, and contribute directly to make an impact.",
     screenshot: "/images/projects/giving-globe.png",
     live: "https://assignment-11-1edee.web.app",
-    clientRepo: "https://github.com/ajijul-islam-5938/giving-globe-client.git",
-    serverRepo: "https://github.com/ajijul-islam-5938/giving-globe-server.git",
+    clientRepo: "https://github.com/Shafiul-islam-5938/giving-globe-client.git",
+    serverRepo: "https://github.com/Shafiul-islam-5938/giving-globe-server.git",
   },
   {
     id: 3,
@@ -109,7 +109,7 @@ const projects = [
       "Bangla Trips is a website offering information about various travel packages and tours in Bangladesh. It features a range of travel options, highlights key destinations, and provides detailed itineraries and pricing. The site aims to help users explore the cultural and natural beauty of Bangladesh through organized trips",
     screenshot: "/images/projects/explore-world.png",
     live: "https://assignment-10-9a5c8.web.app/",
-    clientRepo: "https://github.com/ajijul-islam-5938/explore-world-client.git",
-    serverRepo: "https://github.com/ajijul-islam-5938/explore-world-server.git",
+    clientRepo: "https://github.com/Shafiul-islam-5938/explore-world-client.git",
+    serverRepo: "https://github.com/Shafiul-islam-5938/explore-world-server.git",
   },
 ];
